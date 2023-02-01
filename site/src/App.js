@@ -21,6 +21,10 @@ function App() {
           <a className="App-link" href="/mui">
             MUI
           </a>
+          |
+          <a className="App-link" href="/new-homepage">
+           New Homepage
+          </a>
         </p>
         <a
           className="App-link"
