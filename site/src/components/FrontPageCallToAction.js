@@ -41,7 +41,6 @@ export default function FrontPageCallToAction() {
           <Box textAlign="center">
             <Button
               variant="contained"
-              color="success"
               size="medium"
               href="quiz"
             >
