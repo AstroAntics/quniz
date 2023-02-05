@@ -47,8 +47,6 @@ export default function FrontPageCallToAction() {
             >
               Take the Quiz
             </Button>
-            <br/>
-            <br/>
           </Box>
         </div>
       </Box>
