@@ -3,14 +3,13 @@ import { Box, Typography, Container, Button } from "@mui/material";
 
 export default function FrontPageCallToAction() {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" height="40%">
       <Box mt={5}>
         {/* <p>Help.</p> */}
         <div
           class="squashedText"
           style={{
             backgroundColor: "white",
-            outerHeight: "40%",
             textAlignLast: "center !important",
           }}
         >
