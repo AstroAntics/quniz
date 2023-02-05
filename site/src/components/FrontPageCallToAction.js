@@ -43,6 +43,7 @@ export default function FrontPageCallToAction() {
               variant="contained"
               size="medium"
               href="quiz"
+              backgroundColor="rgb(40, 75, 99)"
             >
               Take the Quiz
             </Button>
