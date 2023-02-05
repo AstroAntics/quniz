@@ -32,6 +32,18 @@ const router = createBrowserRouter([
     path: "/new-homepage",
     element: <NewHomePage/>,
   },
+  {
+    path: "/quiz",
+    element: <MuiApp/> // replace with QuizBody page 
+  },
+  {
+    path: "/about",
+    element: <MuiApp/> // replace with AboutUs page
+  },
+  {
+    path: "/help",
+    element: <MuiApp/> // replace with help page
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
