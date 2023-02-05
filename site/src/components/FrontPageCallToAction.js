@@ -3,7 +3,7 @@ import { Box, Typography, Container, Button } from "@mui/material";
 
 export default function FrontPageCallToAction() {
   return (
-    <Container maxWidth="lg" height="40%">
+    <Container maxWidth="lg" height="150pt">
       <Box mt={5}>
         {/* <p>Help.</p> */}
         <div
