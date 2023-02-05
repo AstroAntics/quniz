@@ -7,9 +7,8 @@ export default function FrontPageCallToAction() {
       <Box mt={5}>
         {/* <p>Help.</p> */}
         <div
-          class="squashedText"
           style={{
-            backgroundColor: "white",
+            backgroundColor: "rgb(40, 75, 99)",
             textAlignLast: "center !important",
           }}
         >
