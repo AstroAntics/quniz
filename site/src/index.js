@@ -10,6 +10,8 @@ import RegisterPage from "./pages/RegisterPage";
 import ErrorPage from "./pages/ErrorPage";
 import AboutUsPage from "./pages/AboutUsPage";
 import NewHomePage from "./NewHomepage";
+import QuizStartPage from "./pages/QuizStartPage";
+import HelpPage from "./pages/HelpPage";
 
 const router = createBrowserRouter([
   {
@@ -45,7 +47,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/the-quiz",
-    element: <MuiApp />, // replace with QuizBody page
+    element: <QuizStartPage />, // replace with QuizBody page
   },
   {
     path: "/who-we-are",
@@ -53,7 +55,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/help",
-    element: <MuiApp />, // replace with help page
+    element: <HelpPage />, // replace with help page
   },
 ]);
 
