@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
-import App from "./App";
+// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import MuiApp from "./MuiApp";
 import LoginPage from "./pages/LoginPage";
@@ -17,7 +17,17 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/login",
+    path: "/home",
+    element: <NewHomePage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/home/home",
+    element: <NewHomePage />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/log-in",
     element: <LoginPage />,
   },
   {
@@ -30,20 +40,20 @@ const router = createBrowserRouter([
   },
   {
     path: "/new-homepage",
-    element: <NewHomePage/>,
+    element: <NewHomePage />,
   },
   {
-    path: "/quiz",
-    element: <MuiApp/> // replace with QuizBody page 
+    path: "/the-quiz",
+    element: <MuiApp />, // replace with QuizBody page
   },
   {
-    path: "/about",
-    element: <MuiApp/> // replace with AboutUs page
+    path: "/who-we-are",
+    element: <MuiApp />, // replace with AboutUs page
   },
   {
     path: "/help",
-    element: <MuiApp/> // replace with help page
-  }
+    element: <MuiApp />, // replace with help page
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

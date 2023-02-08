@@ -12,9 +12,12 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { Link } from "react-router-dom";
 
 const pages = ["Home", "The Quiz", "Log In", "Register", "Who We Are", "Help"];
+const routelinks = ["/", "the-quiz", "login", "register", "about", "help"]; // deprecated
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const slugify = require("slugify");
 
 export default function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -90,7 +93,9 @@ export default function ResponsiveAppBar() {
               >
                 {pages.map((page) => (
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
+                    <Typography textAlign="center">
+                      <Link href={page}>{page}</Link>
+                    </Typography>
                   </MenuItem>
                 ))}
               </Menu>
@@ -115,13 +120,19 @@ export default function ResponsiveAppBar() {
               LOGO
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              {/*eslint-disable-next-line*/}
+              {routelinks.map((route) => { 
+                <Link href={route}></Link>;
+              })}
               {pages.map((page) => (
                 <Button
                   key={page}
+                  component={Link}
+                  to={slugify(page, { lower: true })}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  {page}
+                  <a href={page.toLowerCase}>{page}</a>
                 </Button>
               ))}
             </Box>
