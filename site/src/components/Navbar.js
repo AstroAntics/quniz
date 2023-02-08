@@ -122,15 +122,29 @@ export default function ResponsiveAppBar() {
                   }}
                 >
                   {pages.map((page) => (
-                    <MenuItem key={page} onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center">
-                        <Link href={page}>{page}</Link>
-                      </Typography>
+                    <MenuItem 
+                    key={page} 
+                    component={Link}
+                    onClick={handleCloseNavMenu}
+                    to={slugify(page, {lower: true})}
+                    >
+                      <a href={page.toLowerCase}>{page}</a>
                     </MenuItem>
                   ))}
+                  {pages.map((page) => (
+                  <Button
+                    key={page}
+                    component={Link}
+                    to={slugify(page, { lower: true })}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                  >
+                    <a href={page.toLowerCase}>{page}</a>
+                  </Button>
+                ))}
                 </Menu>
               </Box>
-              <SchoolIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+              <SchoolIcon sx={{ display: { xs: "flex", md: "none" }, color: "white", mr: 1 }} />
               <Typography
                 variant="h5"
                 noWrap
@@ -143,11 +157,11 @@ export default function ResponsiveAppBar() {
                   fontFamily: "sans-serif",
                   fontWeight: 700,
                   letterSpacing: ".3rem",
-                  color: "inherit",
+                  color: "white",
                   textDecoration: "none",
                 }}
               >
-                LOGO
+                qUNIz
               </Typography>
               <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
                 {/*eslint-disable-next-line*/}
