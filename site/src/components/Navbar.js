@@ -12,6 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import SchoolIcon from '@mui/icons-material/School';
 import { Link } from "react-router-dom";
 
 const pages = ["Home", "The Quiz", "Log In", "Register", "Who We Are", "Help"];
@@ -43,9 +44,9 @@ export default function ResponsiveAppBar() {
       <AppBar position="static" color="primary" enableColorOnDark={true}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+            <SchoolIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
             <Typography
-              variant="h4"
+              variant="h3"
               noWrap
               component="a"
               href="/"
@@ -100,7 +101,7 @@ export default function ResponsiveAppBar() {
                 ))}
               </Menu>
             </Box>
-            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+            <SchoolIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
             <Typography
               variant="h5"
               noWrap
@@ -110,7 +111,7 @@ export default function ResponsiveAppBar() {
                 mr: 2,
                 display: { xs: "flex", md: "none" },
                 flexGrow: 1,
-                fontFamily: "monospace",
+                fontFamily: "sans-serif",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
                 color: "inherit",

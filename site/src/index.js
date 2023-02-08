@@ -8,6 +8,7 @@ import MuiApp from "./MuiApp";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import ErrorPage from "./pages/ErrorPage";
+import AboutUsPage from "./pages/AboutUsPage";
 import NewHomePage from "./NewHomepage";
 
 const router = createBrowserRouter([
@@ -48,7 +49,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/who-we-are",
-    element: <MuiApp />, // replace with AboutUs page
+    element: <AboutUsPage />, // replace with AboutUs page
   },
   {
     path: "/help",

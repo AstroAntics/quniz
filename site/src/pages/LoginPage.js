@@ -12,6 +12,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import ResponsiveAppBar from "../components/Navbar";
 
 function Copyright(props) {
   return (
@@ -40,6 +41,7 @@ export default function LoginPage() {
 
   return (
     <ThemeProvider theme={theme}>
+      <ResponsiveAppBar/>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
@@ -48,6 +50,8 @@ export default function LoginPage() {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            backgroundColor: 'white',
+            padding: '2rem',
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -57,7 +61,7 @@ export default function LoginPage() {
             Welcome back!
           </Typography>
           <Typography component="h6">
-              Don't have an account? Sign up.
+              Don't have an account? <Link href="/register">Sign up</Link>.
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField
@@ -101,7 +105,12 @@ export default function LoginPage() {
             </Grid>
           </Box>
         </Box>
-        <Copyright sx={{ mt: 8, mb: 4 }} />
+        <Copyright sx={{ 
+          mt: 8, 
+          mb: 4,
+          backgroundColor: 'white',
+          padding: '10px',
+        }} />
       </Container>
     </ThemeProvider>
   );
