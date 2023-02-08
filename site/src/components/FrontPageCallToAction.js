@@ -1,5 +1,4 @@
 import { Box, Typography, Container, Button } from "@mui/material";
-// import FrontPageButton from "./FrontPageButton";
 
 export default function FrontPageCallToAction() {
   return (
@@ -9,6 +8,9 @@ export default function FrontPageCallToAction() {
           style={{
             backgroundColor: "rgb(40, 75, 99)",
             textAlignLast: "center !important",
+            color: "white",
+            paddingTop: '1rem',
+            paddingBottom: '1rem'
           }}
         >
           <Typography

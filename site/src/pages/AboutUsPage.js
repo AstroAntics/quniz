@@ -3,6 +3,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import ResponsiveAppBar from "../components/Navbar";
+import AboutUsImage from "../images/qunizaboutus.png";
 
 export default function AboutUsPage() {
   return (
@@ -19,6 +20,17 @@ export default function AboutUsPage() {
             padding: "2rem",
           }}
         >
+          <Box
+            component="img"
+            alt="The house from the offer."
+            src={AboutUsImage}
+            sx={{
+              height: '250px',
+              width: '501px',
+              marginTop: '2rem',
+              marginBottom: '2rem'
+            }}
+          />
           <Typography
             component="h4"
             variant="h4"
@@ -29,7 +41,8 @@ export default function AboutUsPage() {
             }}
           >
             Hi, we're qUNIz, a hackathon project hoping to change how people
-            choose their universities. Our aim is to match the university to your preferences.
+            choose their universities. Our aim is to match the university to
+            your preferences.
           </Typography>
           <Typography
             component="h4"
