@@ -2,6 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
 import ResponsiveAppBar from "../components/Navbar";
 
 export default function QuizStartPage() {
@@ -30,6 +31,11 @@ export default function QuizStartPage() {
           >
             Ready to find your next uni?
           </Typography>
+          <Button variant="contained" 
+          to="the-quiz/q1"
+          href="the-quiz/q1">
+            Take the Quiz
+          </Button>
         </Box>
       </Container>
     </div>
