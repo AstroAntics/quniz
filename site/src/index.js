@@ -1,14 +1,17 @@
+import "./index.css";
+import '@fontsource/roboto/700.css';
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
-// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import MuiApp from "./MuiApp";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import ErrorPage from "./pages/ErrorPage";
+import AboutUsPage from "./pages/AboutUsPage";
 import NewHomePage from "./NewHomepage";
+import QuizStartPage from "./pages/QuizStartPage";
+import HelpPage from "./pages/HelpPage";
 
 const router = createBrowserRouter([
   {
@@ -44,15 +47,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/the-quiz",
-    element: <MuiApp />, // replace with QuizBody page
+    element: <QuizStartPage />, // replace with QuizBody page
   },
   {
     path: "/who-we-are",
-    element: <MuiApp />, // replace with AboutUs page
+    element: <AboutUsPage />, // replace with AboutUs page
   },
   {
     path: "/help",
-    element: <MuiApp />, // replace with help page
+    element: <HelpPage />, // replace with help page
   },
 ]);
 
