@@ -10,6 +10,7 @@ export default function FrontPageCallToAction() {
           class="squashedText"
           style={{
             backgroundColor: "white",
+            borderColor:"rgb(40, 75, 99)",
             textAlignLast: "center !important",
           }}
         >
