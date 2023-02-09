@@ -66,7 +66,7 @@ export default function QuizPage4() {
                 margin: '1rem'
             }}>
                 <CardContent>
-                    <Typography>Not very</Typography>
+                    <Typography>10 minutes</Typography>
                     <Button 
                     onClick={() => {window.location.href = 'q5';}}
                     variant='contained'>Choose This Option</Button>
@@ -76,7 +76,7 @@ export default function QuizPage4() {
                 margin: '1rem'
             }}>
                 <CardContent>
-                    <Typography>Somewhat</Typography>
+                    <Typography>20 minutes</Typography>
                     <Button 
                     onClick={() => {window.location.href = 'q5';}}
                     variant='contained'>Choose This Option</Button>
@@ -86,7 +86,7 @@ export default function QuizPage4() {
                 margin: '1rem'
             }}>
                 <CardContent>
-                    <Typography>Quite</Typography>
+                    <Typography>30 minutes</Typography>
                     <Button 
                     onClick={() => {window.location.href = 'q5';}}
                     variant='contained'>Choose This Option</Button>

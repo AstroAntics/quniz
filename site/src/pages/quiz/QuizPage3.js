@@ -64,7 +64,7 @@ export default function QuizPage3() {
               fontWeight: 900,
             }}
           >
-            Do you want a campus uni or not?
+            Do you want a campus uni?
           </Typography>
           <Box
             sx={{
