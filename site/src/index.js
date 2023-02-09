@@ -12,6 +12,14 @@ import AboutUsPage from "./pages/AboutUsPage";
 import NewHomePage from "./NewHomepage";
 import QuizStartPage from "./pages/QuizStartPage";
 import HelpPage from "./pages/HelpPage";
+import QuizPage1 from "./pages/quiz/QuizPage1";
+import QuizPage2 from "./pages/quiz/QuizPage2";
+import QuizPage3 from "./pages/quiz/QuizPage3";
+import QuizPage4 from "./pages/quiz/QuizPage4";
+import QuizPage5 from "./pages/quiz/QuizPage5";
+import QuizPage6 from "./pages/quiz/QuizPage6";
+import QuizPage7 from "./pages/quiz/QuizPage7";
+import QuizResults from "./pages/quiz/QuizResults";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +65,38 @@ const router = createBrowserRouter([
     path: "/help",
     element: <HelpPage />, // replace with help page
   },
+  {
+    path: "/the-quiz/q1",
+    element: <QuizPage1/>,
+  },
+  {
+    path: "/the-quiz/q2",
+    element: <QuizPage2/>,
+  },
+  {
+    path: "/the-quiz/q3",
+    element: <QuizPage3/>,
+  },
+  {
+    path: "/the-quiz/q4",
+    element: <QuizPage4/>,
+  },
+  {
+    path: "/the-quiz/q5",
+    element: <QuizPage5/>,
+  },
+  {
+    path: "/the-quiz/q6",
+    element: <QuizPage6/>,
+  },
+  {
+    path: "/the-quiz/q7",
+    element: <QuizPage7/>,
+  },
+  {
+    path: "/the-quiz/results",
+    element: <QuizResults/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

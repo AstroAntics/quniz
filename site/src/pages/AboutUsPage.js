@@ -22,7 +22,7 @@ export default function AboutUsPage() {
         >
           <Box
             component="img"
-            alt="The house from the offer."
+            alt="About us."
             src={AboutUsImage}
             sx={{
               height: '250px',
